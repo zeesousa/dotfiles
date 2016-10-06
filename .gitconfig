@@ -1,0 +1,8 @@
+[user]
+	email = josesousa9000@gmail.com
+	name = José Sousa
+[core]
+	editor = vim
+	excludesfile = ~/.global_gitignore
+[credential]
+	helper = cache --timeout=3600
