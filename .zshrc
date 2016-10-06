@@ -6,5 +6,5 @@ plugins=(git bundler)
 
 source $ZSH/oh-my-zsh.sh
 
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias update_system="sudo apt-get update && sudo apt-get upgrade"
+
