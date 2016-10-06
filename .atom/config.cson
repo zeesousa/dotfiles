@@ -1,13 +1,17 @@
 "*":
   "atom-beautify":
+    erb:
+      default_beautifier: "HTML Beautifier"
     general:
       _analyticsUserId: "2554c2a1-394e-4a22-b9f9-2c9665dace32"
+    ruby: {}
   core:
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
   editor:
+    fontSize: 20
     tabLength: 4
     tabType: "soft"
   "exception-reporting":
