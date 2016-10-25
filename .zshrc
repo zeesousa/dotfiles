@@ -15,4 +15,5 @@ unset MANPATH
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
-
+alias py_activate="source env/bin/activate"
+ 
