@@ -4,7 +4,7 @@ export ZSH=/home/jose/.oh-my-zsh
 ZSH_THEME="pygmalion"
 
 #Plugins
-plugins=(git docker)
+plugins=(git github docker)
 
 #Oh my zsh
 source $ZSH/oh-my-zsh.sh
@@ -21,6 +21,7 @@ export GOPATH="$HOME/.go"
 #My aliases
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
 alias bi="bundler install"
+alias gpr="hub pull-request"
 
 #RVM setup
 export PATH="$PATH:$HOME/.rvm/bin"

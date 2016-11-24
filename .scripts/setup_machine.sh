@@ -26,6 +26,7 @@ ruby -v
 
 gem install bundler
 gem install rails
+gem install github
 
 #java
 sudo apt-get install -y openjdk-8-jdk openjdk-8-doc netbeans
