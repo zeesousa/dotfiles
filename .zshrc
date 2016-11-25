@@ -15,13 +15,15 @@ PATH="$NPM_PACKAGES/bin:$PATH"
 unset MANPATH
 export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
-#Nice things for golang
+#Set GOPATH
 export GOPATH="$HOME/.go"
 
 #My aliases
+
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
 alias bi="bundler install"
 alias gpr="hub pull-request"
+alias rdcm="rake db:drop && rake db:create && rake db:migrate"
 
 #RVM setup
 export PATH="$PATH:$HOME/.rvm/bin"
