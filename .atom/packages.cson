@@ -1,8 +1,6 @@
 packages: [
   "atom-beautify"
   "file-icons"
-  "linter"
-  "linter-ruby"
   "package-sync"
   "rails-snippets"
   "angularjs"

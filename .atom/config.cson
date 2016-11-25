@@ -6,16 +6,19 @@
       _analyticsUserId: "2554c2a1-394e-4a22-b9f9-2c9665dace32"
     ruby: {}
   core:
+    restorePreviousWindowsOnStart: false
     telemetryConsent: "no"
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
   editor:
-    fontSize: 15
+    fontSize: 16
+    invisibles: {}
     tabLength: 4
-    tabType: "soft"
   "exception-reporting":
     userId: "2f579b0c-15ed-9ba9-c260-e50a3877a9de"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
