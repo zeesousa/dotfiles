@@ -36,3 +36,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
+#hub by github
+sudo apt-get install golang
+
+go get github.com/github/hub
+
