@@ -10,8 +10,11 @@ sudo apt-get install -y git curl zlib1g-dev build-essential libssl-dev libreadli
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-#a better alternative to npm
-npm install yarn -g
+#yarn by facebook, a better alternative to npm
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+sudo apt-get update && sudo apt-get install -y yarn
 
 #rails and ruby
 cd
@@ -39,5 +42,7 @@ mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
 #hub by github
 sudo apt-get install golang
+
+export GOPATH="$HOME/.go"
 
 go get github.com/github/hub
