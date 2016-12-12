@@ -15,7 +15,7 @@ npm install yarn -g
 
 #rails and ruby
 cd
-sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+sudo apt-get install -y libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
 command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -sSL https://get.rvm.io | bash -s stable
@@ -32,6 +32,7 @@ gem install github
 sudo apt-get install -y openjdk-8-jdk openjdk-8-doc netbeans
 
 #zsh
+sudo apt-get install -y zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
@@ -40,4 +41,3 @@ mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 sudo apt-get install golang
 
 go get github.com/github/hub
-
