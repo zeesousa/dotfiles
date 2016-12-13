@@ -1,8 +1,5 @@
-packages: [
-  "atom-beautify"
-  "file-icons"
-  "package-sync"
-  "rails-snippets"
-  "angularjs"
-  "editorconfig"
-]
+atom-beautify
+file-icons
+rails-snippets
+angularjs
+editorconfig

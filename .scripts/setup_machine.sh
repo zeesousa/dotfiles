@@ -16,6 +16,9 @@ echo "deb http://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources
 
 sudo apt-get update && sudo apt-get install -y yarn
 
+yarn global add bower
+yarn global add gulp
+
 #rails and ruby
 cd
 sudo apt-get install -y libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
