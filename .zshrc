@@ -23,6 +23,8 @@ export PATH="$PATH:$GOPATH/bin"
 
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
 alias bi="bundler install"
+alias be="bundler exec"
+alias rake="bundle exec rake"
 alias gpr="hub pull-request"
 alias rdcm="rake db:drop && rake db:create && rake db:migrate"
 alias git="hub"

@@ -37,3 +37,10 @@ ehthumbs.db
 Thumbs.db
 node_modules/
 bower_components/
+
+# Rails #
+#####################
+
+#binstubs
+exe/
+
