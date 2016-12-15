@@ -29,5 +29,10 @@ alias gpr="hub pull-request"
 alias rdcm="rake db:drop && rake db:create && rake db:migrate"
 alias git="hub"
 
+#Phoenix aliases
+alias mec="mix ecto.create"
+alias med="mix ecto.drop"
+alias mem="mix ecto.migrate"
+
 #RVM setup
 export PATH="$PATH:$HOME/.rvm/bin"
