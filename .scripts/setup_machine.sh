@@ -37,15 +37,15 @@ gem install github
 #java
 sudo apt-get install -y openjdk-8-jdk openjdk-8-doc netbeans
 
-#zsh
-sudo apt-get install -y zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-
 #hub by github
 sudo apt-get install golang
 
 export GOPATH="$HOME/.go"
 
 go get github.com/github/hub
+
+#zsh
+sudo apt-get install -y zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+yadm checkout -- ~/.zshrc
