@@ -1,7 +1,7 @@
 export ZSH=/home/jose/.oh-my-zsh
 
 #Themes
-ZSH_THEME="pygmalion"
+ZSH_THEME="geometry"
 
 #Plugins
 plugins=(git github docker)
