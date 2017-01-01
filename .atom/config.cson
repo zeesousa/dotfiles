@@ -15,7 +15,6 @@
   editor:
     fontSize: 16
     invisibles: {}
-    tabLength: 4
   "exception-reporting":
     userId: "2f579b0c-15ed-9ba9-c260-e50a3877a9de"
   "tree-view":
