@@ -6,7 +6,7 @@ REMOTE=$(yadm rev-parse "$UPSTREAM")
 BASE=$(yadm merge-base @ "$UPSTREAM")
 
 if [ $LOCAL = $REMOTE ]; then
-    echo "Your dotfiles are up-to-date"
+    :
 elif [ $LOCAL = $BASE ]; then
     echo "You need to update your dotfiles\nRun 'yadm pull'"
 elif [ $REMOTE = $BASE ]; then
