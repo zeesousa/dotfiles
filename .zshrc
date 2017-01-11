@@ -1,4 +1,4 @@
-export ZSH=/home/jose/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 #Themes
 ZSH_THEME="geometry"
