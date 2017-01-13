@@ -1,5 +1,7 @@
 #!/bin/sh
 
+yadm fetch origin
+
 UPSTREAM=${1:-'@{u}'}
 LOCAL=$(yadm rev-parse @)
 REMOTE=$(yadm rev-parse "$UPSTREAM")
