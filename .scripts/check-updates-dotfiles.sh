@@ -1,7 +1,7 @@
 #!/bin/sh
 
 CURRENT_TIMESTAMP=$(date +"%s")
-LAST_FETCH_TIMESTAMP=$(stat -c %Y .yadm/repo.git/FETCH_HEAD)
+LAST_FETCH_TIMESTAMP=$(stat -c %Y $HOME/.yadm/repo.git/FETCH_HEAD)
 DIFF_TIMESTAMP=`expr $CURRENT_TIMESTAMP - $LAST_FETCH_TIMESTAMP`
 
 if [ $DIFF_TIMESTAMP -lt "0" ]; then
