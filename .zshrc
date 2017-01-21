@@ -31,6 +31,8 @@ alias gpr="hub pull-request"
 alias rdcm="rake db:drop && rake db:create && rake db:migrate"
 alias git="hub"
 
+export PATH="$PATH:$HOME/.scripts/git"
+
 #Phoenix aliases
 alias mec="mix ecto.create"
 alias med="mix ecto.drop"
