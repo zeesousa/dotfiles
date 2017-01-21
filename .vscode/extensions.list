@@ -1,7 +1,11 @@
 EditorConfig.EditorConfig
+christian-kohler.path-intellisense
+dbaeumer.vscode-eslint
+djabraham.vscode-yaml-validation
+eg2.vscode-npm-script
 emmanuelbeziat.vscode-great-icons
 gerane.Theme-Dawn
+lukehoban.Go
 misogi.ruby-rubocop
-mrmlnc.vscode-pugbeautify
-mrmlnc.vscode-puglint
+mjmcloug.vscode-elixir
 rebornix.Ruby
