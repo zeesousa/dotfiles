@@ -38,7 +38,7 @@ gem install github
 sudo apt-get install -y openjdk-8-jdk openjdk-8-doc netbeans
 
 #hub by github
-sudo apt-get install golang
+sudo apt-get -y install golang
 
 export GOPATH="$HOME/.go"
 
