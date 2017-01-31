@@ -10,5 +10,11 @@
         "**/node_modules": true,
         "**/bower_components": true
     },
-    "terminal.integrated.shellArgs.linux": ["-l"]
-}
+    "terminal.integrated.shellArgs.linux": ["-l"],
+    "eslint.autoFixOnSave": true,
+    "files.associations": {
+      "*.vue": "html"
+    },
+    "puglint.enable": true,
+    "pugbeautify.omitDiv": true
+  }
