@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt-get install -y gnome-terminal
 
 sudo apt-get purge -y pantheon-terminal

@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 #Themes
 ZSH_THEME="geometry"
 
-~/.scripts/check-updates-dotfiles.sh
+~/.scripts/check_updates_dotfiles.sh
 
 #Plugins
 plugins=(git github docker)
