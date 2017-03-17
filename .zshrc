@@ -1,7 +1,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 #Themes
-ZSH_THEME="geometry"
+ZSH_THEME="geometry/geometry"
 
 ~/.scripts/check_updates_dotfiles.sh
 
@@ -40,3 +40,7 @@ alias mem="mix ecto.migrate"
 
 #RVM setup
 export PATH="$PATH:$HOME/.rvm/bin"
+
+GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER@$HOST"
+
+
