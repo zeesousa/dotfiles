@@ -1,21 +1,27 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontSize": 16,
-    "editor.tabSize": 2,
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/coverage": true
-    },
-    "terminal.integrated.shellArgs.linux": ["-l"],
-    "eslint.autoFixOnSave": true,
-    "files.associations": {
-      "*.vue": "html"
-    },
-    "puglint.enable": true,
-    "pugbeautify.omitDiv": true
-  }
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true
+  },
+  "terminal.integrated.shellArgs.linux": [
+    "-l"
+  ],
+  "eslint.autoFixOnSave": true,
+  "files.associations": {
+    "*.vue": "html"
+  },
+  "puglint.enable": true,
+  "pugbeautify.omitDiv": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorTheme": "Quiet Light",
+  "ruby.rubocop.executePath": "/home/jose/.rbenv/shims/",
+  "window.zoomLevel": 0
+}

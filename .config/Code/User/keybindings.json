@@ -1,5 +1,8 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+k ctrl+k",               "command": "workbench.action.splitEditor" },
-    { "key": "ctrl+\\",                "command": "workbench.action.terminal.toggleTerminal" }
+    {
+        "key": "ctrl+[Backslash]",
+        "command": "workbench.action.terminal.toggleTerminal"
+    }
 ]
