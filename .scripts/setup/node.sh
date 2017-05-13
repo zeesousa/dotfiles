@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #node
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 #yarn by facebook, a better alternative to npm

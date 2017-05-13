@@ -21,7 +21,7 @@
   "puglint.enable": true,
   "pugbeautify.omitDiv": true,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "Quiet Light",
+  "workbench.colorTheme": "Ocean Dark",
   "ruby.rubocop.executePath": "/home/jose/.rbenv/shims/",
   "window.zoomLevel": 0
 }
