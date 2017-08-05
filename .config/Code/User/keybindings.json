@@ -4,5 +4,15 @@
     {
         "key": "ctrl+[Backslash]",
         "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+alt+[BracketLeft]",
+        "command": "typescriptHero.resolve.addImport",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-typescriptHero.resolve.addImport",
+        "when": "editorTextFocus"
     }
 ]

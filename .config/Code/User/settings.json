@@ -23,5 +23,12 @@
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.colorTheme": "Ocean Dark",
   "ruby.rubocop.executePath": "/home/jose/.rbenv/shims/",
-  "window.zoomLevel": 0
+  "ruby.lint": {
+    "reek": true,
+    "rubocop": true,
+    "ruby": true
+  },
+  "window.zoomLevel": 0,
+  "typescript.check.tscVersion": false,
+  "typescriptHero.resolver.stringQuoteStyle": "\""
 }
