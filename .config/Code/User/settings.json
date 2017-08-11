@@ -24,7 +24,6 @@
   "pugbeautify.omitDiv": true,
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.colorTheme": "Ocean Dark",
-  "ruby.rubocop.executePath": "/home/jose/.rbenv/shims/",
   "ruby.lint": {
     "reek": true,
     "rubocop": true,
