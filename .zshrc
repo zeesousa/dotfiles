@@ -19,7 +19,7 @@ export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 #Set GOPATH
 export GOPATH="$HOME/.go"
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 #My aliases
 
