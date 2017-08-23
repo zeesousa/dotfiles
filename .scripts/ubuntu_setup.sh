@@ -12,5 +12,11 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 sudo apt-get install spotify-client
 
+#discord
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+sudo dpkg -i discord.deb
+sudo apt-get install -y -f
+rm discord.deb
+
 # utils
 sudo apt-get install -y evince pinta eog vlc transmission gdebi gedit tlp
