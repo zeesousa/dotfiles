@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -o pipefail
-
-git remote prune origin
-
-git for-each-ref --format '%(refname:short)' refs/heads | grep -v master | xargs git branch -D
