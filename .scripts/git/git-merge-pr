@@ -1,9 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/zsh
 #
 # KUDOS TO MESTRE MENDES
 #
 # https://github.com/fribmendes/dotfiles/blob/master/bin/git-merge-pr
-#
 
 set -e
 
