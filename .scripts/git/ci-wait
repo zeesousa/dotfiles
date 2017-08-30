@@ -9,7 +9,7 @@ SUCCESS_MSG="✓"
 FAILURE_MSG="✗"
 NO_CI_MSG="none running."
 
-PREFIX_MSG="[ci]:"
+PREFIX_MSG="[ci-wait]:"
 WAITING_MSG="waiting..."
 CAR_RET=${#WAITING_MSG}
 
@@ -68,6 +68,7 @@ function spinner_round() {
 
 function pretty_print() {
   printf "\r\e[38;05;$1m$2\e[m"
+  zenity --notification --text="$2"
 }
 
 check_ci &
