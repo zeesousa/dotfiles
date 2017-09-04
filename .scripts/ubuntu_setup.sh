@@ -19,4 +19,4 @@ sudo apt-get install -y -f
 rm discord.deb
 
 # utils
-sudo apt-get install -y evince pinta eog vlc transmission gdebi gedit tlp gnome-software
+sudo apt-get install -y evince pinta eog vlc transmission gdebi gedit tlp gnome-software calibre
