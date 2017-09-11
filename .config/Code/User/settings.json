@@ -31,5 +31,6 @@
   },
   "window.zoomLevel": 0,
   "typescript.check.tscVersion": false,
-  "typescriptHero.resolver.stringQuoteStyle": "\""
+  "typescriptHero.resolver.stringQuoteStyle": "\"",
+  "extensions.ignoreRecommendations": false
 }
