@@ -8,3 +8,4 @@
 ~/.scripts/setup/geometry.sh
 ~/.scripts/setup/psql.sh
 ~/.scripts/setup/vscode_packages.sh
+~/.scripts/setup/chrome_driver.sh
