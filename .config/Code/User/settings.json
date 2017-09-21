@@ -25,12 +25,12 @@
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.colorTheme": "Ocean Dark",
   "ruby.lint": {
-    "reek": true,
+    "reek": false,
     "rubocop": true,
     "ruby": true
   },
   "window.zoomLevel": 0,
-  "typescript.check.tscVersion": false,
+  "search.useRipgrep": true,
   "typescriptHero.resolver.stringQuoteStyle": "\"",
   "extensions.ignoreRecommendations": false
 }
