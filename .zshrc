@@ -33,20 +33,19 @@ alias mec="mix ecto.create"
 alias med="mix ecto.drop"
 alias mem="mix ecto.migrate"
 
-#RVM setup
-export PATH="$PATH:$HOME/.rvm/bin"
-
 GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER@$HOST"
-
-source ~/.rvm/scripts/rvm
 
 #paranoid android
 export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+#nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+
+#rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
