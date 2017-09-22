@@ -30,7 +30,13 @@
     "ruby": true
   },
   "window.zoomLevel": 0,
-  "typescript.check.tscVersion": false,
+  "search.useRipgrep": true,
+  "search.useIgnoreFilesByDefault": true,
   "typescriptHero.resolver.stringQuoteStyle": "\"",
-  "extensions.ignoreRecommendations": false
+  "extensions.ignoreRecommendations": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  }
 }
