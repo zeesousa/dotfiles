@@ -1,0 +1,15 @@
+#!/usr/bin/zsh
+# This scripts adds all changes and commits with a 'wip' message
+# For safety this script refuses to run on master
+
+BRANCH=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+
+if [ $BRANCH = "master" ] && [ "$1" != "-f" ]
+then
+  echo "Can't run this on the master branch"
+  exit -1
+fi
+
+git add --all
+git commit -m "wip"
+git push -u origin $BRANCH
