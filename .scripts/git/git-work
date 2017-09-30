@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby
+# This scripts adds all changes and commits with a 'wip' message
+
+require 'git'
+require 'logger'
+require 'optparse'
+
+options = {}
+OptionParser.new do |opts|
+  opts.banner = 'Usage: example.rb [options]'
+
+  opts.on('-m M', 'Custom commit message') do |m|
+    options[:message] = m
+  end
+
+  opts.on('-p', 'Push after commit') do |p|
+    options[:push] = p
+  end
+
+  opts.on('-f', 'Force push to master') do |f|
+    options[:force] = f
+  end
+end.parse!
+
+git = Git.open('.')
+
+CURRENT_BRANCH = git.branch.name
+COMMIT_MESSAGE = 'wip' || options[:message]
+PUSH_ENABLED = options[:push]
+FORCE_MASTER_ENABLED = options[:force]
+
+if PUSH_ENABLED && !FORCE_MASTER_ENABLED
+  puts "Can't push to master using this script. Use -f to force it."
+  exit(-1)
+end
+
+git.add(all: true)
+git.commit(COMMIT_MESSAGE)
+git.push('origin', CURRENT_BRANCH) if PUSH_ENABLED
