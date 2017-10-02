@@ -26,7 +26,7 @@
   "workbench.colorTheme": "GitHub Plus",
   "ruby.lint": {
     "reek": false,
-    "rubocop": true,
+    "rubocop": false,
     "ruby": true
   },
   "window.zoomLevel": 0,
