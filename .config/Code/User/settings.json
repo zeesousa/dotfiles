@@ -39,6 +39,6 @@
     "comments": false,
     "strings": false
   },
-  "ruby.rubocop.executePath": "/home/jose/.rvm/gems/ruby-2.4.1/bin/",
+  "ruby.rubocop.executePath": "",
   "react.beautify.formatter": "esformatter"
 }
