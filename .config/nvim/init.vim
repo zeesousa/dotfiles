@@ -4,7 +4,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab 
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim
 call vundle#begin("~/.config/nvim/bundle")
 
 Plugin 'VundleVim/Vundle.vim'

@@ -17,7 +17,6 @@
   "terminal.integrated.shellArgs.linux": [
     "-l"
   ],
-  "eslint.autoFixOnSave": true,
   "files.associations": {
     "*.vue": "html"
   },
@@ -40,5 +39,5 @@
     "strings": false
   },
   "ruby.rubocop.executePath": "",
-  "react.beautify.formatter": "esformatter"
+  "eslint.autoFixOnSave": true
 }
