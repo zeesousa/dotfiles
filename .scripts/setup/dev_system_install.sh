@@ -1,11 +1,11 @@
 #!/bin/bash
 
-~/.scripts/setup/dependencies/apt_packages.sh
-~/.scripts/setup/dependencies/node.sh
-~/.scripts/setup/dependencies/ruby.sh
-~/.scripts/setup/dependencies/go.sh
-~/.scripts/setup/dependencies/zsh.sh
-~/.scripts/setup/dependencies/geometry.sh
-~/.scripts/setup/dependencies/psql.sh
-~/.scripts/setup/dependencies/vscode_packages.sh
-~/.scripts/setup/dependencies/chrome_driver.sh
+~/.scripts/setup/modules/apt_misc.sh
+~/.scripts/setup/modules/nvim.sh
+~/.scripts/setup/modules/node.sh
+~/.scripts/setup/modules/ruby.sh
+~/.scripts/setup/modules/go.sh
+~/.scripts/setup/modules/zsh.sh
+~/.scripts/setup/modules/psql.sh
+~/.scripts/setup/modules/vscode_packages.sh
+~/.scripts/setup/modules/chrome_driver.sh
