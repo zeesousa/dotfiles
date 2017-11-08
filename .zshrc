@@ -47,6 +47,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+alias yarn_reset="rm -rf node_modules && yarn"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
