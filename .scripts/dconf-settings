@@ -76,8 +76,18 @@ minimize=['<Super>Down']
 [org/cinnamon/desktop/media-handling]
 autorun-never=false
 
+[org/cinnamon/desktop/screensaver]
+screensaver-name=''
+
 [org/cinnamon/desktop/applications/terminal]
 exec='gnome-terminal'
+
+[org/cinnamon/desktop/session]
+idle-delay=uint32 0
+
+[org/cinnamon/desktop/privacy]
+recent-files-max-age=-1
+remember-recent-files=false
 
 [org/cinnamon/desktop/wm/preferences]
 theme='Arc'
@@ -98,8 +108,8 @@ dwell-click-enabled=false
 event-sounds=false
 
 [org/cinnamon/desktop/background]
-picture-uri='file:///home/jose/Pictures/game-of-thrones-dragon-minimalism-lu.jpg'
-picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/gnome/Road.jpg'
+picture-options='zoom'
 
 [org/cinnamon/desktop/background/slideshow]
 image-source='xml:///usr/share/gnome-background-properties/gnome-backgrounds.xml'
@@ -120,20 +130,42 @@ shared-path='/home/jose/Downloads'
 [org/gnome/settings-daemon/plugins/color]
 night-light-last-coordinates=(41.444400000000002, -8.2962000000000007)
 
+[org/gnome/settings-daemon/plugins/xsettings]
+overrides={'Gtk/ShellShowsAppMenu': <1>}
+
+[org/gnome/settings-daemon/peripherals/keyboard]
+numlock-state='off'
+
+[org/gnome/shell]
+enabled-extensions=['dash-to-dock@micxgx.gmail.com']
+always-show-log-out=true
+favorite-apps=['firefox.desktop', 'chromium-browser.desktop', 'code.desktop']
+
+[org/gnome/shell/extensions/dash-to-dock]
+apply-custom-theme=true
+multi-monitor=true
+dock-fixed=false
+require-pressure-to-show=false
+dock-position='BOTTOM'
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+
+[org/gnome/shell/overrides]
+dynamic-workspaces=false
+
 [org/gnome/gedit/preferences/ui]
 show-tabs-mode='auto'
 
 [org/gnome/gedit/plugins/filebrowser]
-virtual-root='file:///home/jose/.scripts'
+virtual-root='file:///home/jose/Projects/oncostats/reports'
 tree-view=true
 root='file:///'
 
 [org/gnome/gedit/plugins]
-active-plugins=['docinfo', 'spell', 'modelines', 'filebrowser', 'time']
+active-plugins=['filebrowser', 'spell', 'time', 'modelines', 'docinfo']
 
 [org/gnome/gedit/state/window]
 size=(900, 700)
-state=0
+state=128
 bottom-panel-size=140
 side-panel-size=200
 side-panel-active-page='GeditWindowDocumentsPanel'
@@ -154,7 +186,7 @@ source-units='degree'
 accuracy=9
 
 [org/gnome/evince/default]
-window-ratio=(3.2253946068714341, 1.2032450795234533)
+window-ratio=(3.2252100840336135, 1.2030878859857481)
 
 [org/gnome/file-roller/listing]
 sort-method='name'
@@ -167,6 +199,10 @@ show-path=false
 sidebar-width=200
 window-height=480
 window-width=600
+
+[org/gnome/evolution-data-server]
+network-monitor-gio-name=''
+migrated=true
 
 [org/gnome/desktop/a11y/applications]
 screen-keyboard-enabled=false
@@ -195,17 +231,28 @@ apps=['alacarte.desktop', 'authconfig.desktop', 'ca.desrt.dconf-editor.desktop',
 name='X-GNOME-Sundry.directory'
 
 [org/gnome/desktop/background]
-picture-uri='file:///home/jose/Pictures/game-of-thrones-dragon-minimalism-lu.jpg'
-picture-options='stretched'
+picture-uri='file:///usr/share/backgrounds/gnome/Road.jpg'
+primary-color='#ffffff'
+picture-options='zoom'
+secondary-color='#000000'
 
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'pt'), ('xkb', 'us')]
+xkb-options=@as []
 
 [org/gnome/desktop/wm/keybindings]
+switch-to-workspace-right=['']
+switch-to-workspace-up=['<Primary><Super>Left', '<Control><Alt>Up']
+switch-to-workspace-left=['']
+switch-to-workspace-down=['<Primary><Super>Right', '<Control><Alt>Down']
 move-to-workspace-left=['<Control><Primary><Super>right']
+move-to-workspace-down=['<Primary><Alt><Super>Right', '<Control><Shift><Alt>Down']
+move-to-workspace-up=['<Primary><Alt><Super>Left', '<Control><Shift><Alt>Up']
 
 [org/gnome/desktop/interface]
 gtk-im-module='gtk-im-context-simple'
+icon-theme='Arc-Icons'
+gtk-theme='Arc'
 toolkit-accessibility=false
 
 [org/gnome/gthumb/browser]
@@ -282,6 +329,9 @@ foreground-color='rgb(131,148,150)'
 [org/gnome/terminal/legacy]
 schema-version=uint32 3
 
+[org/gnome/nm-applet]
+disable-vpn-notifications=true
+
 [org/gnome/nm-applet/eap/cbe67004-e9f0-4992-a7be-32cad9ad20a2]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
@@ -300,15 +350,15 @@ ignore-ca-cert=false
 
 [org/gnome/software]
 first-run=false
-check-timestamp=int64 1506167025
+check-timestamp=int64 1510157977
 
 [org/gtk/settings/file-chooser]
 sort-column='name'
 sidebar-width=186
-window-position=(134, 10)
+window-position=(134, 69)
 show-size-column=true
 show-hidden=false
-window-size=(1652, 1008)
+window-size=(1652, 921)
 sort-directories-first=false
 date-format='regular'
 sort-order='ascending'
@@ -316,7 +366,7 @@ location-mode='path-bar'
 
 [org/nemo/window-state]
 start-with-sidebar=true
-geometry='800x550+477+122'
+geometry='758x630+571+204'
 maximized=false
 sidebar-bookmark-breakpoint=0
 
