@@ -39,5 +39,8 @@
     "strings": false
   },
   "ruby.rubocop.executePath": "",
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": false,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false
 }
