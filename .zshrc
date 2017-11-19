@@ -11,6 +11,8 @@ plugins=(git github docker)
 #Oh my zsh
 source $ZSH/oh-my-zsh.sh
 
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+
 #Set GOPATH
 export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
