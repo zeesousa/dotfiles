@@ -1,18 +1,41 @@
-#!/usr/bin/zsh
+#!/usr/bin/env ruby
 # This scripts adds all changes and commits with a 'wip' message
 # For safety this script refuses to run on master
+require 'optparse'
 
-BRANCH=$(git symbolic-ref HEAD | sed -e 's,.*/\(.*\),\1,')
+def shell(command)
+  output = `#{command}`
 
-if [ $BRANCH = "master" ] && [ "$1" != "-f" ]
-then
-  echo "Can't run this on the master branch"
-  exit -1
-fi
+  exit(-1) unless $?.success?
 
-git add --all
-git commit -m "wip"
-if [ $1 ] && [ $1 = "push" ]
-then
-  git push -u origin $BRANCH
-fi
+  output
+end
+
+branch=shell("git rev-parse --abbrev-ref HEAD")
+
+options = {}
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: git work [options]"
+
+  opts.on("-f", "--force", "Force script execution on master") do |f|
+    options[:force] = f
+  end
+
+  opts.on("-p", "--push", "Push after commit") do |p|
+    options[:push] = p
+  end
+
+  opts.on("-m M", "--message M", String, "Commit message") do |m|
+    options[:message] = m
+  end
+end.parse!
+
+if branch == "master" && !options[:force]
+  puts "Can't run this on the master branch"
+  exit(-1)
+end
+
+puts shell("git add --all")
+puts shell("git commit -m '#{options[:message] || 'wip'}'")
+puts shell("git push -u origin #{branch}") if options[:push]
