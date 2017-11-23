@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+def shell(command)
+  output = `#{command}`
+
+  exit(-1) unless $?.success?
+
+  output
+end
+
+base = shell("git merge-base HEAD master")
+
+puts shell("git reset --soft #{base}")
+
+puts "Ready to commit!"
+

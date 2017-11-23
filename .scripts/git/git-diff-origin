@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+def shell(command)
+  output = `#{command}`
+
+  exit(-1) unless $?.success?
+
+  output
+end
+
+remote = shell("git rev-parse --abbrev-ref --symbolic-full-name @{u}")
+system("git diff #{remote}")
