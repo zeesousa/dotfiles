@@ -1,17 +1,14 @@
-export ZSH=$HOME/.oh-my-zsh
+export ZPLUG_HOME=$HOME/.zplug
+source $ZPLUG_HOME/init.zsh
 
-#Themes
-ZSH_THEME="geometry/geometry"
+zmodload zsh/zprof
+zplug "zplug/zplug"
+zplug "geometry-zsh/geometry"
+zplug "sorin-ionescu/prezto", use:"init.zsh", hook-build:"ln -s $ZPLUG_HOME/repos/sorin-ionescu/prezto ~/.zprezto"
+zplug "glidenote/hub-zsh-completion"
+zplug load
 
 ~/.scripts/check_updates_dotfiles.sh
-
-#Plugins
-plugins=(git github docker)
-
-#Oh my zsh
-source $ZSH/oh-my-zsh.sh
-
-export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 
 #Set GOPATH
 export GOPATH="$HOME/.go"
@@ -28,9 +25,16 @@ alias gw="git wip"
 alias gwp="git wip -p"
 alias gdo="git diff-origin"
 alias gsquash="git squash-feature"
+alias gst="git status"
 alias rdcm="be rake db:drop && be rake db:create && be rake db:migrate"
 alias rrs="be rubocop -a && be rake spec"
-alias git="hub"
+
+# hub hack
+if (( $+commands[hub] )); then
+  function git {
+    hub "$@"
+  }
+fi
 
 export PATH="$PATH:$HOME/.scripts/git"
 
@@ -49,10 +53,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 #nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 alias yarn_reset="rm -rf node_modules && yarn"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
