@@ -1,14 +1,12 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "ctrl+k ctrl+k",               "command": "workbench.action.splitEditor" },
     {
-        "key": "ctrl+[Backslash]",
-        "command": "workbench.action.terminal.toggleTerminal"
+        "key": "cmd+k cmd+k",
+        "command": "workbench.action.splitEditor"
     },
     {
-        "key": "ctrl+alt+[BracketLeft]",
-        "command": "typescriptHero.resolve.addImport",
-        "when": "editorTextFocus"
+        "key": "cmd+\\",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+shift+i",
@@ -24,7 +22,7 @@
         "command": "workbench.action.nextEditor"
     },
     {
-        "key": "ctrl+n",
+        "key": "cmd+n",
         "command": "newFile.createNewFile"
     }
 ]

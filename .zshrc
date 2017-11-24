@@ -16,6 +16,7 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 #My aliases
 
+alias vim="nvim"
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
 alias bi="bundler install"
 alias be="bundler exec"
@@ -50,9 +51,7 @@ export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
-#nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#node
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 alias yarn_reset="rm -rf node_modules && yarn"
 

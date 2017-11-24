@@ -1,4 +1,4 @@
-#!/usr/bin/zsh
+#!/usr/bin/env zsh
 #
 # KUDOS TO MESTRE MENDES, PUT SOME RESPEK
 # https://github.com/fribmendes/dotfiles/blob/master/bin/git-nuke

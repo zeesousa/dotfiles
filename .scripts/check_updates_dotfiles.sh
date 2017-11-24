@@ -1,12 +1,17 @@
-#!/bin/sh
+#!/usr/bin/env zsh
 
 CURRENT_TIMESTAMP=$(date +"%s")
-LAST_FETCH_TIMESTAMP=$(stat -c %Y $HOME/.yadm/repo.git/FETCH_HEAD)
+if [[ "$OSTYPE" == darwin* ]]; then
+ LAST_FETCH_TIMESTAMP=$(stat -f '%m' $HOME/.yadm/repo.git/FETCH_HEAD) 
+fi
+if [[ "$OSTYPE" == "linux-gun" ]]; then
+ LAST_FETCH_TIMESTAMP=$(stat -c %Y $HOME/.yadm/repo.git/FETCH_HEAD)
+fi
 DIFF_TIMESTAMP=`expr $CURRENT_TIMESTAMP - $LAST_FETCH_TIMESTAMP`
 
 # Only check for updates every 12 hours
 
-if [ $DIFF_TIMESTAMP -lt "0" ]; then
+if [ $DIFF_TIMESTAMP -le "0" ]; then
   :
 elif [ $DIFF_TIMESTAMP -gt "43200" ]; then
   echo "Checking dotfiles for updates"
