@@ -85,26 +85,26 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
                                 "key_code": "grave_accent_and_tilde"
                             },
                             "to": {
                                 "key_code": "backslash"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": {
+                                "key_code": "left_command"
                             }
                         },
                         {
@@ -144,6 +144,14 @@
                             "to": {
                                 "key_code": "left_command"
                             }
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_command"
+                            },
+                            "to": {
+                                "key_code": "right_option"
+                            }
                         }
                     ]
                 },
@@ -161,26 +169,34 @@
                     "simple_modifications": [
                         {
                             "from": {
-                                "key_code": "left_control"
-                            },
-                            "to": {
-                                "key_code": "left_command"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "left_command"
-                            },
-                            "to": {
-                                "key_code": "left_control"
-                            }
-                        },
-                        {
-                            "from": {
                                 "key_code": "grave_accent_and_tilde"
                             },
                             "to": {
                                 "key_code": "backslash"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": {
+                                "key_code": "left_control"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": {
+                                "key_code": "left_command"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "non_us_pound"
+                            },
+                            "to": {
+                                "key_code": "quote"
                             }
                         },
                         {
@@ -197,14 +213,6 @@
                             },
                             "to": {
                                 "key_code": "open_bracket"
-                            }
-                        },
-                        {
-                            "from": {
-                                "key_code": "non_us_pound"
-                            },
-                            "to": {
-                                "key_code": "quote"
                             }
                         }
                     ]
