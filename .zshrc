@@ -26,6 +26,7 @@ alias rrs="be rubocop -a && be rake spec"
 
 alias ga="git add"
 alias gaa="git add --all"
+alias gb="git branch"
 alias gc="git commit"
 alias gco="git checkout"
 alias gcp="git cherry-pick"
