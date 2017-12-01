@@ -1,9 +1,5 @@
-Angular.ng-template
 EditorConfig.EditorConfig
-James-Yu.latex-workshop
-Mikael.Angular-BeastCode
 PeterJausovec.vscode-docker
-ban.spellright
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
 dkundel.vscode-new-file
@@ -12,8 +8,6 @@ eg2.tslint
 eg2.vscode-npm-script
 emmanuelbeziat.vscode-great-icons
 esbenp.prettier-vscode
-gerane.Theme-Dawn
-golf1052.theme-base16-ocean
 lukehoban.Go
 misogi.ruby-rubocop
 mjmcloug.vscode-elixir
