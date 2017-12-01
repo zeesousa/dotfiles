@@ -9,9 +9,8 @@
         "command": "workbench.action.terminal.toggleTerminal"
     },
     {
-        "key": "ctrl+shift+i",
-        "command": "-typescriptHero.resolve.addImport",
-        "when": "editorTextFocus"
+        "key": "F12",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "alt+left",

@@ -44,5 +44,12 @@
   "eslint.autoFixOnSave": false,
   "stylelint.enable": true,
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  "cSpell.userWords": [
+    "acestream",
+    "memcachedcloud",
+    "memjs",
+    "servers",
+    "soccersearch"
+  ]
 }
