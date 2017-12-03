@@ -4,7 +4,7 @@ CURRENT_TIMESTAMP=$(date +"%s")
 if [[ "$OSTYPE" == darwin* ]]; then
  LAST_FETCH_TIMESTAMP=$(stat -f '%m' $HOME/.yadm/repo.git/FETCH_HEAD) 
 fi
-if [[ "$OSTYPE" == "linux-gun" ]]; then
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
  LAST_FETCH_TIMESTAMP=$(stat -c %Y $HOME/.yadm/repo.git/FETCH_HEAD)
 fi
 DIFF_TIMESTAMP=`expr $CURRENT_TIMESTAMP - $LAST_FETCH_TIMESTAMP`
