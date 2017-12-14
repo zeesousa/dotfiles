@@ -16,6 +16,7 @@ export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 #My aliases
 
+alias cryptofool="curl --silent https://raw.githubusercontent.com/naps62/cryptofool/master/bin/exchange-rate | ruby"
 alias vim="nvim"
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
 alias bi="bundler install"
@@ -46,6 +47,7 @@ alias gwp="git wip -p"
 alias gdo="git diff-origin"
 alias gsquash="git squash-feature"
 alias gst="git status"
+alias gfa="git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done"
 
 # hub hack
 if (( $+commands[hub] )); then
