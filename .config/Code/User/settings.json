@@ -51,5 +51,6 @@
     "memjs",
     "servers",
     "soccersearch"
-  ]
+  ],
+  "editor.multiCursorModifier": "alt"
 }
