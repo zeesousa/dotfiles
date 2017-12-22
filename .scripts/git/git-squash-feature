@@ -8,7 +8,7 @@ def shell(command)
   output
 end
 
-base = shell("git merge-base HEAD master")
+base = shell("git merge-base HEAD #{ARGV[0]}")
 
 puts shell("git reset --soft #{base}")
 
