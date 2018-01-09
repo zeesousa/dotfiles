@@ -47,7 +47,7 @@ alias gwp="git wip -p"
 alias gdo="git diff-origin"
 alias gsquash="git squash-feature"
 alias gst="git status"
-alias gfa="git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done"
+alias gfa="git fetch-all"
 
 # hub hack
 if (( $+commands[hub] )); then
