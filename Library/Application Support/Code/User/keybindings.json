@@ -5,7 +5,7 @@
     "command": "workbench.action.splitEditor"
   },
   {
-    "key": "cmd+shift+i",
+    "key": "shift+cmd+i",
     "command": "editor.action.formatDocument"
   },
   {
