@@ -1,6 +1,6 @@
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
-
+echo "memes"
 zmodload zsh/zprof
 zplug "zplug/zplug"
 zplug "geometry-zsh/geometry"
