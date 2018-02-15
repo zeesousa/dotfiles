@@ -27,7 +27,7 @@
   "workbench.colorTheme": "GitHub Plus",
   "ruby.lint": {
     "reek": false,
-    "rubocop": false,
+    "rubocop": true,
     "ruby": true
   },
   "window.zoomLevel": 0,
@@ -45,12 +45,5 @@
   "stylelint.enable": true,
   "css.validate": false,
   "scss.validate": false,
-  "cSpell.userWords": [
-    "acestream",
-    "memcachedcloud",
-    "memjs",
-    "servers",
-    "soccersearch"
-  ],
   "editor.multiCursorModifier": "alt"
 }

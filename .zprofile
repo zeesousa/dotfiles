@@ -4,10 +4,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 fi
 
-eval "$(rbenv init -)"
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" 
-
 #
 # Executes commands at login pre-zshrc.
 #

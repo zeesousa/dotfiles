@@ -7,12 +7,7 @@
     {
         "key": "ctrl+[Backslash]",
         "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "ctrl+shift+i",
-        "command": "-typescriptHero.resolve.addImport",
-        "when": "editorTextFocus"
-    },
+    }, 
     {
         "key": "alt+left",
         "command": "workbench.action.previousEditor"
@@ -28,5 +23,9 @@
     {
         "key": "ctrl+shift+[BracketRight]",
         "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "editor.action.format"
     }
 ]
