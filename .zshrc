@@ -10,9 +10,6 @@ if ! zgen saved; then
   zgen save
 fi
 
-#zplug "geometry-zsh/geometry"
-
-
 # ASDF
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 [ -f ~/.asdf/completions/asdf.bash ] && source ~/.asdf/completions/asdf.bash

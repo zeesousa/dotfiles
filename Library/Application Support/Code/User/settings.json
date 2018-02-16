@@ -1,1 +1,48 @@
-.config/Code/User/settings.json
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Fira Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/deps": true,
+    "**/_build": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    "*.vue": "html"
+  },
+  "pugbeautify.omitDiv": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorTheme": "GitHub Plus",
+  "ruby.lint": {
+    "reek": false,
+    "rubocop": true,
+    "ruby": true
+  },
+  "window.zoomLevel": 0,
+  "search.useRipgrep": true,
+  "search.useIgnoreFilesByDefault": true,
+  "typescriptHero.resolver.stringQuoteStyle": "\"",
+  "extensions.ignoreRecommendations": false,
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "ruby.rubocop.executePath": "",
+  "eslint.autoFixOnSave": false,
+  "stylelint.enable": true,
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.multiCursorModifier": "alt",
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.shellArgs.osx": [ "-i" ]
+}

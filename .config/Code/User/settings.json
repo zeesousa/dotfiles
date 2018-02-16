@@ -16,9 +16,6 @@
     "**/_build": true
   },
   "files.trimTrailingWhitespace": true,
-  "terminal.integrated.shellArgs.linux": [
-    "-l"
-  ],
   "files.associations": {
     "*.vue": "html"
   },
@@ -45,5 +42,7 @@
   "stylelint.enable": true,
   "css.validate": false,
   "scss.validate": false,
-  "editor.multiCursorModifier": "alt"
+  "editor.multiCursorModifier": "alt",
+  "terminal.integrated.shell.osx": "zsh",
+  "terminal.integrated.shellArgs.osx": [ "-i" ]
 }
