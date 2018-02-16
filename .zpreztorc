@@ -10,6 +10,5 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'prompt'
 
 zstyle ':prezto:module:editor' key-bindings 'vi'
