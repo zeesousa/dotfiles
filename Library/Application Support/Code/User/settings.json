@@ -21,7 +21,6 @@
   },
   "pugbeautify.omitDiv": true,
   "workbench.iconTheme": "vscode-great-icons",
-  "workbench.colorTheme": "GitHub Plus",
   "ruby.lint": {
     "reek": false,
     "rubocop": true,
@@ -44,5 +43,14 @@
   "scss.validate": false,
   "editor.multiCursorModifier": "alt",
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.shellArgs.osx": [ "-i" ]
+  "terminal.integrated.shellArgs.osx": [
+    "-i"
+  ],
+  "workbench.colorTheme": "GitHub Plus",
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript"
+  ]
 }
