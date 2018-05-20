@@ -21,22 +21,14 @@
   },
   "pugbeautify.omitDiv": true,
   "workbench.iconTheme": "vscode-great-icons",
-  "ruby.lint": {
-    "reek": false,
-    "rubocop": true,
-    "ruby": true
-  },
   "window.zoomLevel": 0,
   "search.useRipgrep": true,
-  "search.useIgnoreFilesByDefault": true,
-  "typescriptHero.resolver.stringQuoteStyle": "\"",
   "extensions.ignoreRecommendations": false,
   "editor.quickSuggestions": {
     "other": false,
     "comments": false,
     "strings": false
   },
-  "ruby.rubocop.executePath": "",
   "eslint.autoFixOnSave": false,
   "stylelint.enable": true,
   "css.validate": false,
@@ -52,5 +44,6 @@
     "xml",
     "php",
     "javascript"
-  ]
+  ],
+  "clock.dateFormat": "HH:MM"
 }
