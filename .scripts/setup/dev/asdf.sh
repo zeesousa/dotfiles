@@ -5,7 +5,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.2
 source ~/.zshrc
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  sudo apt-get install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev
+  sudo apt-get install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev curl
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc gpg
 fi
