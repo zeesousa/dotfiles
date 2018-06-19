@@ -47,10 +47,4 @@
     "-i"
   ],
   "workbench.colorTheme": "GitHub Plus",
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "php",
-    "javascript"
-  ]
 }
