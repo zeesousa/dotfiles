@@ -45,5 +45,9 @@
     "php",
     "javascript"
   ],
-  "clock.dateFormat": "HH:MM"
+  "clock.dateFormat": "HH:MM",
+  "ruby.rubocop.executePath": "/home/xico/.asdf/shims/",
+  "ruby.lint": {
+
+  }
 }

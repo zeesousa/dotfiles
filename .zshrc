@@ -14,6 +14,13 @@ fi
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 [ -f ~/.asdf/completions/asdf.bash ] && source ~/.asdf/completions/asdf.bash
 
+# Linux Brew
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+  export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+fi
+
 # Disabled once I can check a faster alternative
 # ~/.scripts/check_updates_dotfiles.sh
 
@@ -79,3 +86,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 #node
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 alias yarn_reset="rm -rf node_modules && yarn"
+
+# PIP
+export PATH=~/.local/bin:$PATH
