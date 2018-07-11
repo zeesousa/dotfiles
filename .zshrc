@@ -10,6 +10,10 @@ if ! zgen saved; then
   zgen save
 fi
 
+# VSCode shortcuts
+alias vscode-export-extensions="rm -f $HOME/.vscode/extensions.list && code --list-extensions > $HOME/.vscode/extensions.list"
+alias vscode-import-extensions="$HOME/.scripts/setup/dev/vscode_packages.sh"
+
 # ASDF
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 [ -f ~/.asdf/completions/asdf.bash ] && source ~/.asdf/completions/asdf.bash
