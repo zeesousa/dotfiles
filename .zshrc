@@ -10,6 +10,9 @@ if ! zgen saved; then
   zgen save
 fi
 
+# hookup direnv for .envrc
+eval "$(direnv hook zsh)"
+
 # VSCode shortcuts
 alias vscode-export-extensions="rm -f $HOME/.vscode/extensions.list && code --list-extensions > $HOME/.vscode/extensions.list"
 alias vscode-import-extensions="$HOME/.scripts/setup/dev/vscode_packages.sh"
