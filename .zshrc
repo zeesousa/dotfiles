@@ -77,6 +77,7 @@ if (( $+commands[hub] )); then
 fi
 
 export PATH="$PATH:$HOME/.scripts/git"
+export PATH="$PATH:$HOME/.scripts/bin"
 
 #Phoenix aliases
 alias mec="mix ecto.create"

@@ -6,7 +6,7 @@ sudo apt-get install -y git curl zlib1g-dev build-essential \
     libffi-dev openjdk-8-jdk openjdk-8-doc software-properties-common\
     libgdbm-dev libncurses5-dev automake \
     libtool bison libffi-dev libpq-dev libssl-dev \
-    cowsay
+    cowsay direnv
 
 #fix internet
 sudo touch /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
