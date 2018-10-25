@@ -5,7 +5,15 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.4.2
 source ~/.zshrc
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-  sudo apt-get install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev curl
+  if [ -x "$(command -v pacman)" ]; then
+    sudo pacman -S --noconfirm base-devel
+  elif [ -x "$(command -v apt-get)" ]; then
+    sudo apt-get install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev curl
+  else
+    echo "Unsupported distro! Exiting..."
+
+    exit -1
+  fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   brew install coreutils automake autoconf openssl libyaml readline libxslt libtool unixodbc gpg
 fi
