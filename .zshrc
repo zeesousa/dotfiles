@@ -65,7 +65,7 @@ alias gst="git status"
 alias gw="git wip"
 alias gwp="git wip -p"
 alias gdo="git diff-origin"
-alias gsquash="git squash-feature"
+alias gsq="git squash-feature"
 alias gst="git status"
 alias gfa="git fetch-all"
 

@@ -98,17 +98,22 @@
                         ]
                     },
                     {
-                        "description": "Home FIX",
+                        "description": "Fix home",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "home"
+                                    "key_code": "home",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "left_arrow",
                                         "modifiers": [
-                                            "fn"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -117,17 +122,22 @@
                         ]
                     },
                     {
-                        "description": "End FIX",
+                        "description": "Fix end",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "end"
+                                    "key_code": "end",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
                                         "modifiers": [
-                                            "fn"
+                                            "left_command"
                                         ]
                                     }
                                 ],
