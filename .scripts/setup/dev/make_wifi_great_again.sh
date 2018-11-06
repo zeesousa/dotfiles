@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function arch(){
-  echo "Not implemented!"
+  echo "MakeWifiGreatAgain not implemented!"
 }
 
 function ubuntu(){
@@ -15,7 +15,7 @@ function ubuntu(){
 }
 
 function macos(){
-  echo "Not implemented!"
+  echo "MakeWifiGreatAgain not implemented!"
 }
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then

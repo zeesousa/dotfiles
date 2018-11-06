@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function arch(){
-  echo "Not implemented!"
+  echo "Misc packages not implemented!"
 }
 
 function ubuntu(){
@@ -15,7 +15,7 @@ function ubuntu(){
 }
 
 function macos(){
-  echo "Not implemented!"
+  echo "Misc packages not implemented!"
 }
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
