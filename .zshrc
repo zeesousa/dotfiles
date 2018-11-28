@@ -57,7 +57,7 @@ alias gl="git log"
 alias gls="git log -oneline --abbrev-commit"
 alias gm="git merge"
 alias gp="git push"
-alias gpl="git pull"
+alias gpl="git pull --rebase"
 alias gpr="hub pull-request"
 alias gpt="git push origin --tags"
 alias grb="git rebase"
@@ -68,6 +68,7 @@ alias gdo="git diff-origin"
 alias gsq="git squash-feature"
 alias gst="git status"
 alias gfa="git fetch-all"
+alias gf="git fetch --prune"
 
 # hub hack
 if (( $+commands[hub] )); then
