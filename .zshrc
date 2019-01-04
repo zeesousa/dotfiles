@@ -13,10 +13,6 @@ fi
 # hookup direnv for .envrc
 eval "$(direnv hook zsh)"
 
-# VSCode shortcuts
-alias vscode-export-extensions="rm -f $HOME/.vscode/extensions.list && code --list-extensions > $HOME/.vscode/extensions.list"
-alias vscode-import-extensions="$HOME/.scripts/setup/dev/vscode_packages.sh"
-
 # ASDF
 [ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
 [ -f ~/.asdf/completions/asdf.bash ] && source ~/.asdf/completions/asdf.bash
@@ -36,39 +32,7 @@ export GOPATH="$HOME/.go"
 export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 
 #My aliases
-alias cryptofool="curl --silent https://raw.githubusercontent.com/naps62/cryptofool/master/bin/exchange-rate | ruby"
-alias vim="nvim"
-alias update_system="sudo apt-get update && sudo apt-get upgrade"
-alias bi="bundler install"
-alias be="bundler exec"
-alias rake="bundle exec rake"
-alias rdcm="be rake db:drop && be rake db:create && be rake db:migrate"
-alias rrs="be rubocop -a && be rake spec"
-
-alias ga="git add"
-alias gaa="git add --all"
-alias gb="git branch"
-alias gc="git commit"
-alias gco="git checkout"
-alias gcp="git cherry-pick"
-alias gd="git diff"
-alias gdt="git difftool"
-alias gl="git log"
-alias gls="git log -oneline --abbrev-commit"
-alias gm="git merge"
-alias gp="git push"
-alias gpl="git pull --rebase"
-alias gpr="hub pull-request"
-alias gpt="git push origin --tags"
-alias grb="git rebase"
-alias gst="git status"
-alias gw="git wip"
-alias gwp="git wip -p"
-alias gdo="git diff-origin"
-alias gsq="git squash-feature"
-alias gst="git status"
-alias gfa="git fetch-all"
-alias gf="git fetch --prune"
+source "$HOME/.zsh/aliases.sh"
 
 # hub hack
 if (( $+commands[hub] )); then
@@ -94,7 +58,6 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 #node
 export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
-alias yarn_reset="rm -rf node_modules && yarn"
 
 # PIP
 export PATH=~/.local/bin:$PATH

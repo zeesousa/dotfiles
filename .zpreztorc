@@ -7,7 +7,6 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'homebrew' \
   'syntax-highlighting' \
   'history-substring-search' \
 
