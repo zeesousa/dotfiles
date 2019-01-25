@@ -44,11 +44,6 @@ fi
 export PATH="$PATH:$HOME/.scripts/git"
 export PATH="$PATH:$HOME/.scripts/bin"
 
-#Phoenix aliases
-alias mec="mix ecto.create"
-alias med="mix ecto.drop"
-alias mem="mix ecto.migrate"
-
 GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER@$HOST"
 
 #paranoid android

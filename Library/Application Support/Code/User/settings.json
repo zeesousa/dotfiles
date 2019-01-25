@@ -19,7 +19,6 @@
   "files.associations": {
     "*.vue": "html"
   },
-  "pugbeautify.omitDiv": true,
   "workbench.iconTheme": "vscode-great-icons",
   "ruby.lint": {
     "reek": false,
@@ -27,8 +26,6 @@
     "ruby": true
   },
   "window.zoomLevel": 0,
-  "search.useRipgrep": true,
-  "search.useIgnoreFilesByDefault": true,
   "typescriptHero.resolver.stringQuoteStyle": "\"",
   "extensions.ignoreRecommendations": false,
   "editor.quickSuggestions": {
@@ -47,12 +44,5 @@
     "-i"
   ],
   "workbench.colorTheme": "GitHub Plus",
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "github.hosts": [
-    {
-      "host": "https://github.com",
-      "username": "oauth",
-      "token": "system"
-    }
-  ],
+  "javascript.updateImportsOnFileMove.enabled": "prompt",
 }
