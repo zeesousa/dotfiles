@@ -44,7 +44,7 @@ fi
 export PATH="$PATH:$HOME/.scripts/git"
 export PATH="$PATH:$HOME/.scripts/bin"
 
-GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER@$HOST"
+GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER"
 
 #paranoid android
 export ANDROID_HOME=${HOME}/Android/Sdk
