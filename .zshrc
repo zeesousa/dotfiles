@@ -56,3 +56,9 @@ export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
 
 # PIP
 export PATH=~/.local/bin:$PATH
+
+# gnome-terminal stuff
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    . /etc/profile.d/vte.sh
+fi
+
