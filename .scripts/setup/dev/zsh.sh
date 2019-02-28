@@ -15,5 +15,3 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
-
-source ~/.zshrc

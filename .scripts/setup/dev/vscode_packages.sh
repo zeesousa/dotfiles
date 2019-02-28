@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 cat "$HOME/.vscode/extensions.list" | \
 while read CMD; do
