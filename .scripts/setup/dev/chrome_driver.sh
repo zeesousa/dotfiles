@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function arch(){
-  sudo pacman -S chromedriver
+  pacaur -S chromedriver
 }
 
 function ubuntu(){
