@@ -5,6 +5,7 @@ function create_user(){
   ORIGINAL_USER="$(echo $USER)"
 
   sudo cp $DIR/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf
+  sudo cp $DIR/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf
   sudo service postgresql restart
   sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
 }
@@ -16,7 +17,11 @@ function arch(){
 }
 
 function ubuntu(){
-  sudo apt-get install -y postgresql libpq-dev
+  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - 
+  sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -sc)-pgdg main" > /etc/apt/sources.list.d/PostgreSQL.list'
+    
+  sudo apt-get update
+  sudo apt-get install -y postgresql-11 pgadmin4 libpq-dev
 
   create_user
 }
