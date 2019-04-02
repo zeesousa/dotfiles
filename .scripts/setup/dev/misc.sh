@@ -1,7 +1,9 @@
 #!/bin/bash
 
 function arch(){
-  echo "Misc packages not implemented!"
+  sudo pacman-mirrors --country Portugal United_Kingdom Sweden United_States && sudo pacman -Syyyu --noconfirm
+ 
+  pacaur -Sy moka-icon-theme arc-gtk-theme yadm git zsh curl direnv discord franz-bin mailspring slack-desktop visual-studio-code-bin spotify --noconfirm
 }
 
 function ubuntu(){
