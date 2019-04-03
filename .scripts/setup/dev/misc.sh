@@ -2,8 +2,10 @@
 
 function arch(){
   sudo pacman-mirrors --country Portugal United_Kingdom Sweden United_States && sudo pacman -Syyyu --noconfirm
- 
-  pacaur -Sy moka-icon-theme arc-gtk-theme yadm git zsh curl direnv discord franz-bin mailspring slack-desktop visual-studio-code-bin spotify --noconfirm
+
+  gpg --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+
+  pacaur -Sy hub moka-icon-theme arc-gtk-theme yadm git zsh curl direnv discord franz-bin mailspring slack-desktop visual-studio-code-bin spotify --noconfirm
 }
 
 function ubuntu(){
