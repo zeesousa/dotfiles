@@ -22,15 +22,35 @@ current-workspace-only=false
 
 [org/cinnamon]
 extension-cache-updated=1538643042
-panels-resizable=['1:true']
-alttab-switcher-delay=100
-panel-edit-mode=false
-enabled-applets=['panel1:right:0:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:1:show-desktop@cinnamon.org:2', 'panel1:left:2:panel-launchers@cinnamon.org:3', 'panel1:right:1:keyboard@cinnamon.org:5', 'panel1:right:2:notifications@cinnamon.org:6', 'panel1:right:3:removable-drives@cinnamon.org:7', 'panel1:right:4:user@cinnamon.org:8', 'panel1:right:5:network@cinnamon.org:9', 'panel1:right:7:power@cinnamon.org:11', 'panel1:right:8:calendar@cinnamon.org:12', 'panel1:right:9:sound@cinnamon.org:13']
-next-applet-id=14
+desktop-effects-unmaximize-transition='easeNone'
+desktop-effects-maximize-transition='easeInExpo'
+active-display-scale=1
+desktop-effects-map-effect='traditional'
+desktop-effects-close-effect='traditional'
+desktop-effects-unmaximize-time=100
 enabled-desklets=@as []
-panel-launchers=['DEPRECATED']
-panels-enabled=['1:0:top']
+desktop-effects-map-time=100
+desktop-effects-minimize-effect='traditional'
+alttab-switcher-style='icons+preview'
 panels-height=['1:33']
+next-applet-id=14
+panel-launchers=['DEPRECATED']
+desktop-effects-map-transition='easeOutQuad'
+desktop-effects-unmaximize-effect='none'
+panels-enabled=['1:0:top']
+desktop-effects-maximize-time=100
+desktop-effects-tile-transition='easeInQuad'
+desktop-effects-maximize-effect='none'
+panels-resizable=['1:true']
+enabled-applets=['panel1:right:0:systray@cinnamon.org:0', 'panel1:left:0:menu@cinnamon.org:1', 'panel1:left:1:show-desktop@cinnamon.org:2', 'panel1:left:2:panel-launchers@cinnamon.org:3', 'panel1:right:1:keyboard@cinnamon.org:5', 'panel1:right:2:notifications@cinnamon.org:6', 'panel1:right:3:removable-drives@cinnamon.org:7', 'panel1:right:4:user@cinnamon.org:8', 'panel1:right:5:network@cinnamon.org:9', 'panel1:right:7:power@cinnamon.org:11', 'panel1:right:8:calendar@cinnamon.org:12', 'panel1:right:9:sound@cinnamon.org:13']
+desktop-effects-minimize-time=160
+alttab-switcher-delay=100
+desktop-effects-tile-effect='none'
+desktop-effects-close-transition='easeOutQuad'
+desktop-effects-minimize-transition='easeInQuad'
+panel-edit-mode=false
+desktop-effects-close-time=120
+desktop-effects-tile-time=100
 
 [org/cinnamon/settings-daemon/plugins/power]
 lock-on-suspend=true
@@ -56,19 +76,23 @@ drag-threshold=8
 motion-threshold=1
 double-click=400
 
+[org/cinnamon/sounds]
+tile-enabled=false
+switch-enabled=false
+
 [org/cinnamon/muffin]
 resize-threshold=24
 
-[org/cinnamon/desktop/a11y/applications]
-screen-keyboard-enabled=false
-screen-reader-enabled=false
-
-[org/cinnamon/desktop/a11y/mouse]
-secondary-click-enabled=false
-secondary-click-time=1.2
-dwell-time=1.2
-dwell-threshold=10
-dwell-click-enabled=false
+[org/cinnamon/desktop/interface]
+text-scaling-factor=1.1000000000000001
+cursor-size=24
+font-name='Sans 12'
+scaling-factor=uint32 0
+toolkit-accessibility=false
+cursor-theme='xcursor-breeze-snow'
+cursor-blink-time=1200
+icon-theme='Papirus-Light'
+gtk-theme='Arc'
 
 [org/cinnamon/desktop/keybindings/wm]
 maximize=['<Super>Up']
@@ -80,35 +104,60 @@ move-to-workspace-left=['<Primary><Alt><Super>Left']
 push-tile-left=@as []
 push-tile-right=@as []
 
+[org/cinnamon/desktop/media-handling]
+autorun-never=false
+
 [org/cinnamon/desktop/screensaver]
 screensaver-name=''
 screensaver-webkit-theme='webkit-stars@cinnamon.org'
 
-[org/cinnamon/desktop/interface]
-text-scaling-factor=1.0
-cursor-size=24
-font-name='Sans 12'
-toolkit-accessibility=false
-cursor-theme='xcursor-breeze-snow'
-cursor-blink-time=1200
-icon-theme='Papirus-Adapta-Nokto-Maia'
-gtk-theme='Arc'
-
-[org/cinnamon/desktop/sound]
-event-sounds=false
+[org/cinnamon/desktop/applications/terminal]
+exec='gnome-terminal'
 
 [org/cinnamon/desktop/wm/preferences]
 min-window-opacity=30
 button-layout='menu:minimize,maximize,close'
+mouse-button-zoom-modifier=''
 mouse-button-modifier=''
 theme='Arc'
 titlebar-font='Sans Bold 12'
 
-[org/cinnamon/cinnamon-session]
-prefer-hybrid-sleep=false
+[org/cinnamon/desktop/a11y/magnifier]
+mag-factor=1.0
+
+[org/cinnamon/desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-magnifier-enabled=true
+screen-reader-enabled=false
+
+[org/cinnamon/desktop/a11y/keyboard]
+mousekeys-init-delay=300
+mousekeys-max-speed=10
+mousekeys-accel-time=300
+bouncekeys-delay=300
+slowkeys-delay=300
+
+[org/cinnamon/desktop/a11y/mouse]
+secondary-click-enabled=false
+secondary-click-time=1.2
+dwell-time=1.2
+dwell-threshold=10
+dwell-click-enabled=false
+
+[org/cinnamon/desktop/sound]
+event-sounds=false
+
+[org/cinnamon/desktop/background]
+picture-uri='file:///usr/share/backgrounds/gnome/Road.jpg'
+primary-color='#ffffff'
 
 [org/cinnamon/theme]
+symbolic-relative-size=0.67000000000000004
 name='Arc'
+
+[org/cinnamon/cinnamon-session]
+prefer-hybrid-sleep=false
+quit-time-delay=60
 
 [org/blueman/general]
 window-properties=[500, 350, 65, 92]
@@ -175,13 +224,14 @@ network-monitor-gio-name=''
 migrated=true
 
 [org/gnome/desktop/interface]
-icon-theme='Papirus-Adapta-Nokto-Maia'
-toolkit-accessibility=false
-document-font-name='Sans 12'
 text-scaling-factor=1.25
+document-font-name='Sans 12'
+scaling-factor=uint32 0
+toolkit-accessibility=false
 cursor-theme='xcursor-breeze-snow'
-gtk-theme='Arc'
+icon-theme='Papirus-Adapta-Nokto-Maia'
 monospace-font-name='Fira Mono 12'
+gtk-theme='Arc'
 
 [org/gnome/desktop/notifications]
 application-children=['pamac-updater', 'firefox']
@@ -266,11 +316,19 @@ schema-version=uint32 3
 disable-disconnected-notifications=true
 disable-connected-notifications=true
 
+[org/gnome/nm-applet/eap/a7e9268c-2b09-4ad2-98f6-00533bd00876]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
 [org/gnome/nm-applet/eap/39cb5a6e-030f-492e-a474-499ef36a316b]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
 [org/gnome/nm-applet/eap/ed6c5a88-7226-42a3-81d6-66b841955dfb]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
+[org/gnome/nm-applet/eap/dda6268f-3831-49ba-af2c-cd2b87262df7]
 ignore-phase2-ca-cert=false
 ignore-ca-cert=false
 
@@ -282,6 +340,15 @@ transportation-type='pedestrian'
 [org/gtk/settings/color-chooser]
 selected-color=(true, 0.14506666666666668, 0.15800888888888889, 0.16, 1.0)
 custom-colors=[(0.14506666666666668, 0.15800888888888889, 0.16, 1.0), (0.86274509803921573, 0.9137254901960784, 0.92156862745098034, 1.0), (0.73671111111111121, 0.76836666666666709, 0.8633333333333334, 1.0), (0.27058823529411763, 0.27450980392156865, 0.28627450980392155, 1.0)]
+
+[org/nemo/preferences]
+bulk-rename-tool=b'gprename'
+
+[org/nemo/window-state]
+start-with-sidebar=true
+geometry='800x487+550+272'
+maximized=false
+sidebar-bookmark-breakpoint=5
 
 [org/nemo/desktop]
 font='Noto Sans 12'
@@ -514,3 +581,9 @@ name='Spacer'
 
 [com/solus-project/budgie-wm]
 button-layout='appmenu:minimize,maximize,close'
+
+[ca/desrt/dconf-editor]
+saved-view='/'
+window-height=600
+window-width=800
+window-is-maximized=false

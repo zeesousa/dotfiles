@@ -16,7 +16,8 @@
   },
   "files.trimTrailingWhitespace": true,
   "files.associations": {
-    "*.vue": "html"
+    "*.vue": "html",
+    "*.css": "scss"
   },
   "workbench.iconTheme": "vscode-great-icons",
   "ruby.lint": {
@@ -43,4 +44,7 @@
   ],
   "workbench.colorTheme": "GitHub Plus",
   "javascript.updateImportsOnFileMove.enabled": "prompt",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
