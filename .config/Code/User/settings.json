@@ -52,4 +52,7 @@
   },
   "workbench.colorCustomizations": {},
   "materialTheme.accent": "Remove accents",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
 }
