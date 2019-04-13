@@ -25,7 +25,7 @@
     "rubocop": true,
     "ruby": true
   },
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "extensions.ignoreRecommendations": false,
   "editor.quickSuggestions": {
     "other": false,
@@ -47,4 +47,9 @@
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {},
+  "materialTheme.accent": "Remove accents",
 }
