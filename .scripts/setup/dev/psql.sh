@@ -4,14 +4,18 @@ function create_user(){
   DIR="$(dirname "$(readlink -f "$0")")"
   ORIGINAL_USER="$(echo $USER)"
 
-  sudo cp $DIR/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf
-  sudo cp $DIR/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf
-  sudo service postgresql restart
   sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
 }
 
 function arch(){
   sudo pacman -S postgresql postgresql-libs
+
+  sudo su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
+
+  sudo systemctl start postgresql
+  sudo cp $DIR/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf
+  sudo cp $DIR/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf
+  sudo systemctl restart postgresql
 
   create_user
 }
@@ -22,6 +26,10 @@ function ubuntu(){
     
   sudo apt-get update
   sudo apt-get install -y postgresql-11 pgadmin4 libpq-dev
+
+  sudo cp $DIR/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf
+  sudo cp $DIR/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf
+  sudo service postgres restart
 
   create_user
 }
