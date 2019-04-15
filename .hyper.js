@@ -140,8 +140,7 @@ module.exports = {
   plugins: [
       "hypercwd",
       "hyper-search",
-      "hyper-one-light",
-      "hyper-spotify"
+      "hyper-one-light"
   ],
 
   // in development, you can create a directory under
