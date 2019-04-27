@@ -1,4 +1,3 @@
-export ZPLUG_HOME=$HOME/.zplug
 source "${HOME}/.zgen/zgen.zsh"
 
 zmodload zsh/zprof

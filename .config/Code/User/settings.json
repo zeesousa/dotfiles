@@ -62,4 +62,11 @@
   "gitlens.blame.highlight.enabled": false,
   "gitlens.hovers.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "window.menuBarVisibility": "default",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
