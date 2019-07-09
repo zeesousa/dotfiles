@@ -25,7 +25,7 @@
     "rubocop": true,
     "ruby": true
   },
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -2,
   "extensions.ignoreRecommendations": false,
   "editor.quickSuggestions": {
     "other": false,
@@ -39,9 +39,7 @@
   "scss.validate": false,
   "editor.multiCursorModifier": "alt",
   "terminal.integrated.shell.osx": "zsh",
-  "terminal.integrated.shellArgs.osx": [
-    "-i"
-  ],
+  "terminal.integrated.shellArgs.osx": ["-i"],
   "workbench.colorTheme": "GitHub Plus",
   "javascript.updateImportsOnFileMove.enabled": "prompt",
   "[javascriptreact]": {
@@ -69,4 +67,10 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.tslint": true
+    }
+  }
 }
