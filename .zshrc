@@ -58,6 +58,6 @@ export PATH=~/.local/bin:$PATH
 
 # gnome-terminal stuff
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    . /etc/profile.d/vte.sh
+    test -d "/etc/profile.d/vte.sh" && . /etc/profile.d/vte.sh
 fi
 
