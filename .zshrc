@@ -64,6 +64,6 @@ fi
 if grep -q microsoft-standard /proc/version; then
     {
         (sudo /home/xico/.scripts/bin/wsl-startup &)
-        test keychain && eval `keychain --eval` || true
+        ((test keychain && eval `keychain --eval` || true) &)
     } &> /dev/null 
 fi
