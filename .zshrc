@@ -61,3 +61,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     test -d "/etc/profile.d/vte.sh" && . /etc/profile.d/vte.sh
 fi
 
+if grep -q microsoft-standard /proc/version; then
+    {
+        (sudo /home/xico/.scripts/bin/wsl-startup &)
+        test keychain && eval `keychain --eval` || true
+    } &> /dev/null 
+fi
