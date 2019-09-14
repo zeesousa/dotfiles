@@ -1,16 +1,30 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env zsh
 
-def shell(command)
-  output = `#{command}`
+set -e
 
-  exit(-1) unless $?.success?
+function not_merged() {
+  merge_destination_branch=$1
+  merge_source_branch=$2
 
-  output
-end
+  merge_base=$(git merge-base $merge_destination_branch $merge_source_branch)
+  merge_source_current_commit=$(git rev-parse $merge_source_branch)
+  if [[ $merge_base = $merge_source_current_commit ]]
+  then
+    return 1
+  else
+    return 0
+  fi
+}
 
-base = shell("git merge-base HEAD #{ARGV[0]}")
+BASE=$(git merge-base HEAD $1)
+CURRENT_BRANCH=$(git branch | grep \* | cut -d ' ' -f2)
 
-puts shell("git reset --soft #{base}")
+if not_merged $CURRENT_BRANCH $1; then
+    echo "$1 is not merged with this branch, fix that please"
 
-puts "Ready to commit!"
+    exit -1
+fi
 
+git reset --soft $BASE
+
+echo "squashed everything, ready to commit"

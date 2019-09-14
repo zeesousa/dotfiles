@@ -1,9 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
 printf "This will fully reset the repo to the match the remote. YOU CAN LOSE DATA\n"
-read -p "Are you sure you want to continue? <y/N> " prompt
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
-then
+if read -q "REPLY?Are you sure you want to continue? <y/N> "; then
   git pull
 
   remote=$(git rev-parse --abbrev-ref --symbolic-full-name @{u})
