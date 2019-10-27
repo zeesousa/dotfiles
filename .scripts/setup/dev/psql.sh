@@ -1,7 +1,8 @@
 #!/bin/bash
 
+DIR="$(dirname "$(readlink -f "$0")")"
+
 function create_user(){
-  DIR="$(dirname "$(readlink -f "$0")")"
   ORIGINAL_USER="$(echo $USER)"
 
   sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
@@ -29,7 +30,7 @@ function ubuntu(){
 
   sudo cp $DIR/pg_hba.conf /etc/postgresql/10/main/pg_hba.conf
   sudo cp $DIR/pg_hba.conf /etc/postgresql/11/main/pg_hba.conf
-  sudo service postgres restart
+  sudo service postgresql restart
 
   create_user
 }

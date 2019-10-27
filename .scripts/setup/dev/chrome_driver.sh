@@ -5,7 +5,7 @@ function arch(){
 }
 
 function ubuntu(){
-  sudo apt-get install -y chromium-chromedriver
+  sudo apt-get install -y chromium-browser
   sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
 }
 

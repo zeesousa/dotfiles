@@ -67,3 +67,5 @@ if grep -q microsoft-standard /proc/version; then
         test keychain && eval `keychain --eval` || true
     } &>> /home/xico/.wsl-logs
 fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
