@@ -20,10 +20,6 @@ echo -e "Installing psql\n\n"
 ~/.scripts/setup/dev/psql.sh
 echo -e "\n\n"
 
-echo -e "Installing vscode packages\n\n"
-~/.scripts/setup/dev/vscode_packages.sh
-echo -e "\n\n"
-
 echo -e "Installing fira fonts\n\n"
 ~/.scripts/setup/dev/fira.sh
 echo -e "\n\n"
