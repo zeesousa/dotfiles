@@ -1,5 +1,41 @@
+[io/elementary/calculator/saved-state]
+extended-shown=false
+entry-content='55'
+window-x=815
+window-y=371
+
+[io/elementary/switchboard/saved-state]
+window-position=(966, 125)
+window-width=1920
+position=['0', '30']
+window-height=1006
+window-state='Normal'
+window-maximized=false
+window-size=(1024, 720)
+
+[io/elementary/photos/preferences/window]
+direct-maximize=false
+direct-height=680
+direct-width=1000
+
+[io/elementary/calendar/saved-state]
+month-page='2019-11'
+selected-day='2019-319'
+
+[io/elementary/desktop/wingpanel/bluetooth]
+bluetooth-enabled=true
+
 [io/elementary/desktop/wingpanel/power]
 show-percentage=true
+
+[io/elementary/desktop/wingpanel/datetime]
+clock-format='12h'
+clock-show-seconds=false
+clock-show-weekday=true
+
+[io/elementary/desktop/wingpanel/applications-menu]
+screen-resolution='1920x1080'
+use-category=true
 
 [io/elementary/desktop/wingpanel/sound]
 last-title-info=['io.elementary.music.desktop', '', '']
@@ -7,6 +43,7 @@ last-title-info=['io.elementary.music.desktop', '', '']
 [io/elementary/files/preferences]
 window-height=680
 window-width=1000
+tab-info-list=[(uint32 0, 'file:///run/user/1000/keybase/kbfs/team/subvisual.timecapsule/.kbfs_autogit/secrets', '')]
 sidebar-width=191
 active-tab-position=0
 window-state='normal'
@@ -15,6 +52,9 @@ window-x=0
 window-y=30
 single-click=false
 
+[io/elementary/files/file-chooser]
+last-folder-uri='file:///home/xico/Downloads'
+
 [io/elementary/files/icon-view]
 zoom-level='large'
 
@@ -22,16 +62,41 @@ zoom-level='large'
 unsafe-paste-alert=true
 remember-tabs=false
 
+[io/elementary/terminal/saved-state]
+window-height=810
+window-width=1280
+focused-tab=0
+window-position=(561, 135)
+window-state='Normal'
+window-size=(1033, 779)
+tabs=@as []
+opening-x=320
+opening-y=119
+
 [io/elementary/appcenter/settings]
 window-x=410
 reset-paid-apps=false
 paid-apps=@as []
 window-y=191
 
+[io/elementary/code/settings]
+opened-files-view1=['file:///home/xico/.local/share/io.elementary.code/unsaved/Text%20file%20from%202019-11-15%2023:13:12:315495']
+opened-files-view2=@as []
+plugins-enabled=['detect-indent', 'editorconfig', 'outline']
+focused-document-view1='file:///home/xico/.local/share/io.elementary.code/unsaved/Text%20file%20from%202019-11-15%2023:13:12:315495'
+
+[io/elementary/code/folder-manager]
+opened-folders=@as []
+
+[io/elementary/code/saved-state]
+window-x=50
+window-y=126
+
 [net/launchpad/plank/docks/dock1]
 icon-size=48
 show-dock-item=false
 position='bottom'
+dock-items=['gala-multitaskingview.dockitem', 'io.elementary.calendar.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.appcenter.dockitem', 'firefox.dockitem', 'discord_discord.dockitem', 'slack.dockitem', 'keybase.dockitem', 'io.elementary.terminal.dockitem']
 unhide-delay=0
 items-alignment='center'
 theme='Gtk+'
@@ -49,6 +114,11 @@ pressure-reveal=false
 offset=0
 current-workspace-only=false
 
+[org/onboard]
+system-theme-associations={'HighContrast': 'HighContrast', 'HighContrastInverse': 'HighContrastInverse', 'LowContrast': 'LowContrast', 'ContrastHighInverse': 'HighContrastInverse', 'Default': ''}
+schema-version='2.3'
+use-system-defaults=false
+
 [org/onboard/theme-settings]
 key-size=94.0
 key-stroke-width=0.0
@@ -58,6 +128,98 @@ key-fill-gradient=8.0
 key-style='gradient'
 key-stroke-gradient=8.0
 roundrect-radius=20.0
+
+[org/gnome/epiphany/state]
+window-position=(0, 30)
+is-maximized=false
+window-size=(1920, 1003)
+
+[org/gnome/software]
+first-run=false
+check-timestamp=int64 1573810090
+
+[org/gnome/evolution/bogofilter]
+command=''
+utf8-for-spam-filter=true
+
+[org/gnome/evolution/plugin/prefer-plain]
+show-suppressed=true
+mode='normal'
+
+[org/gnome/evolution/mail]
+paned-size=1133640
+junk-check-incoming=true
+browser-close-on-reply-policy='ask'
+reply-style-name='quoted'
+composer-visually-wrap-long-lines=false
+layout=1
+image-loading-policy='never'
+forward-style-name='attached'
+hpaned-size=1500000
+to-do-bar-width=1150000
+search-gravatar-for-photo=false
+prompt-on-composer-mode-switch=true
+
+[org/gnome/evolution/mail/composer-window]
+width=625
+maximized=false
+height=500
+
+[org/gnome/evolution/addressbook]
+primary-addressbook='system-address-book'
+completion-show-address=false
+completion-minimum-query-length=3
+
+[org/gnome/evolution/calendar]
+work-day-friday=true
+confirm-purge=true
+work-day-wednesday=true
+work-day-sunday=false
+work-day-thursday=true
+recur-events-italic=false
+prefer-new-item=''
+primary-calendar='system-calendar'
+work-day-saturday=false
+time-divisions=30
+work-day-tuesday=true
+date-navigator-pane-position=183
+week-start-day-name='monday'
+primary-memos='system-memo-list'
+work-day-monday=true
+tag-vpane-position=0.0011520737327188613
+primary-tasks='system-task-list'
+
+[org/gnome/evolution/shell]
+menubar-visible=true
+folder-bar-width=273
+sidebar-visible=true
+default-component-id='mail'
+buttons-visible=true
+attachment-view=0
+toolbar-visible=true
+statusbar-visible=true
+
+[org/gnome/evolution/shell/window]
+width=901
+maximized=true
+height=480
+x=0
+y=30
+
+[org/gnome/evolution]
+version='3.28.5'
+
+[org/gnome/nm-applet/eap/16ba2fc9-b0ba-4fd4-a08a-410415f587c5]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
+[org/gnome/nm-applet/eap/2f4ee683-e272-420f-8e2a-aa9c9f6e7c83]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
+
+[org/gnome/nm-applet/eap/eb89c58a-001f-4b25-bfe9-a3ceb49e786e]
+ignore-phase2-ca-cert=false
+ignore-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -170,3 +332,5 @@ lock-on-lid=false
 
 [com/github/donadigo/eddy]
 mime-types=['application/vnd.debian.binary-package', 'application/x-deb']
+window-x=635
+window-y=241
