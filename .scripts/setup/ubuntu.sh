@@ -1,4 +1,4 @@
- #!/bin/sh
+#!/usr/bin/env zsh
 
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -14,29 +14,27 @@ sudo apt-get install -y git curl zlib1g-dev build-essential wget \
 
 # zsh
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
-chsh -s $(which zsh)
 
 # asdf
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt update && sudo apt install --no-install-recommends -y yarn
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.5
-. ~/.zshrc
-asdf update
-asdf plugin-add ruby
-asdf plugin-add nodejs
+.asdf/bin/asdf update
+.asdf/bin/asdf plugin-add ruby
+.asdf/bin/asdf plugin-add nodejs
 export GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" && mkdir -p "$GNUPGHOME" && chmod 0700 "$GNUPGHOME"
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-asdf install ruby "2.6.5"
-asdf install nodejs "12.13.0"
-asdf global ruby "2.6.5"
-asdf global nodejs "12.13.0"
-asdf reshim ruby
-asdf reshim nodejs
+.asdf/bin/asdf install ruby "2.6.5"
+.asdf/bin/asdf install nodejs "12.13.0"
+.asdf/bin/asdf global ruby "2.6.5"
+.asdf/bin/asdf global nodejs "12.13.0"
+.asdf/bin/asdf reshim ruby
+.asdf/bin/asdf reshim nodejs
 
 # brew
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-brew install hub
+/home/linuxbrew/.linuxbrew/bin/brew install hub
 
 # some snap apps
 sudo snap install discord spotify
@@ -49,7 +47,7 @@ sudo apt-get install -y elasticsearch
 
 # psql
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -csu`-pgdg main" | sudo tee  /etc/apt/sources.list.d/pgdg.list
+echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install -y postgresql-12 libpq-dev
 sudo cp $0/misc/pg_hba.conf /etc/postgresql/12/main/pg_hba.conf
@@ -59,7 +57,7 @@ sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
 
 # keybase app
 curl --remote-name https://prerelease.keybase.io/keybase_amd64.deb
-sudo apt install ./keybase_amd64.deb
+sudo apt install -y ./keybase_amd64.deb
 rm -f keybase_amd64.deb
 
 # vscode
@@ -68,6 +66,7 @@ sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 sudo apt-get update
 sudo apt-get install -y code
+rm packages.microsoft.gpg
 
 # fira fonts
 wget https://github.com/carrois/Fira/archive/master.zip
@@ -79,7 +78,7 @@ sudo cp FiraSans-master/Fira_Code_3_2/Fonts/FiraCode_OTF_32/* /usr/share/fonts/o
 sudo cp FiraSans-master/Fira_Mono_3_2/Fonts/FiraMono_OTF_32/* /usr/share/fonts/opentype/fira_mono
 sudo cp FiraSans-master/Fira_Sans_4_3/Fonts/Fira_Sans_OTF_4301/Normal/Roman/* /usr/share/fonts/opentype/fira_sans
 sudo cp FiraSans-master/Fira_Sans_4_3/Fonts/Fira_Sans_OTF_4301/Normal/Italic/* /usr/share/fonts/opentype/fira_sans
-rm -rf master.zip Fira-master/
+rm -rf master.zip FiraSans-master/
 
 # nvim
 if [[ $(apt-cache search --names-only 'neovim' | wc -c) == 0 ]]; then
@@ -89,6 +88,6 @@ fi
 sudo apt-get install -y neovim
 
 # chromedriver
-sudo apt-get install -y chromium-browser
-sudo ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
+snap install chromium
 
+echo "Please run chsh and select ZSH"

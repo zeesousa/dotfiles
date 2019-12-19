@@ -21,18 +21,19 @@ sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
 
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.5
-source ~/.zshrc
-asdf update
-asdf plugin-add ruby
-asdf plugin-add nodejs
+.asdf/bin/asdf update
+.asdf/bin/asdf plugin-add ruby
+.asdf/bin/asdf plugin-add nodejs
 export GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" && mkdir -p "$GNUPGHOME" && chmod 0700 "$GNUPGHOME"
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-asdf install ruby "2.6.5"
-asdf install nodejs "12.13.0"
-asdf global ruby "2.6.5"
-asdf global nodejs "12.13.0"
-asdf reshim ruby
-asdf reshim nodejs
+.asdf/bin/asdf install ruby "2.6.5"
+.asdf/bin/asdf install nodejs "12.13.0"
+.asdf/bin/asdf global ruby "2.6.5"
+.asdf/bin/asdf global nodejs "12.13.0"
+.asdf/bin/asdf reshim ruby
+.asdf/bin/asdf reshim nodejs
+curl -o- -L https://yarnpkg.com/install.sh | bash
+
 
 # fira fonts
 wget https://github.com/carrois/Fira/archive/master.zip
@@ -44,4 +45,4 @@ sudo cp FiraSans-master/Fira_Code_3_2/Fonts/FiraCode_OTF_32/* /usr/share/fonts/o
 sudo cp FiraSans-master/Fira_Mono_3_2/Fonts/FiraMono_OTF_32/* /usr/share/fonts/opentype/fira_mono
 sudo cp FiraSans-master/Fira_Sans_4_3/Fonts/Fira_Sans_OTF_4301/Normal/Roman/* /usr/share/fonts/opentype/fira_sans
 sudo cp FiraSans-master/Fira_Sans_4_3/Fonts/Fira_Sans_OTF_4301/Normal/Italic/* /usr/share/fonts/opentype/fira_sans
-rm -rf master.zip Fira-master/
+rm -rf master.zip FiraSans-master/

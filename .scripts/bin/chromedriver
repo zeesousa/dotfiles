@@ -1,0 +1,3 @@
+##!/usr/bin/env zsh
+
+snap run chromium.chromedriver
