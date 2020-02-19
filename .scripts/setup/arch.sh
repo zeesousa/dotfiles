@@ -11,6 +11,10 @@ pacaur -Sy hub moka-icon-theme arc-gtk-theme yadm git zsh curl direnv wget \
 # some snaps
 sudo snap install discord spotify
 
+# nvim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+vim +PlugInstall +qall
+
 # psql
 sudo su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
 sudo systemctl start postgresql

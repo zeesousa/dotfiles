@@ -4,10 +4,14 @@
 brew install hub git zsh yadm curl wget coreutils automake \
   autoconf openssl libyaml readline libxslt libtool unixodbc \
   gpg nvim
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew cask install visual-studio-code slack spotify discord \
   chromedriver postgresql font-fira-code font-fira-mono \
   font-fira-mono-for-powerline font-fira-sans
+
+# nvim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+vim +PlugInstall +qall
 
 # zsh
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
@@ -25,4 +29,3 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 .asdf/bin/asdf global nodejs "12.13.0"
 .asdf/bin/asdf reshim ruby
 .asdf/bin/asdf reshim nodejs
-
