@@ -13,8 +13,7 @@ fi
 eval "$(direnv hook zsh)"
 
 # ASDF
-[ -f ~/.asdf/asdf.sh ] && source ~/.asdf/asdf.sh
-[ -f ~/.asdf/completions/asdf.bash ] && source ~/.asdf/completions/asdf.bash
+source $HOME/.asdf/asdf.sh
 
 # Linux Brew
 if [[ "$OSTYPE" == "linux-gnu" ]]; then

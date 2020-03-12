@@ -89,7 +89,9 @@ sudo apt-get install -y neovim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
 vim +PlugInstall +qall
 
-# chromedriver
-snap install chromium
+# chromium
+sudo add-apt-repository ppa:chromium-team/stable
+sudo apt-get update
+sudo apt-get -y chromium-chromedriver chromium-driver
 
 echo "Please run chsh and select ZSH"
