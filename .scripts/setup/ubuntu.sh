@@ -94,4 +94,24 @@ sudo add-apt-repository ppa:chromium-team/stable
 sudo apt-get update
 sudo apt-get -y chromium-chromedriver chromium-driver
 
+# firefox-dev
+
+wget -O firefox.tar.bz 'https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=en-US'
+tar xjf firefox.tar.bz
+sudo mv firefox /usr/local/bin
+sudo chown -R $USER /usr/local/bin/firefox
+cat > ~/.local/share/applications/firefoxDeveloperEdition.desktop <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Name=Firefox Developer Edition
+Exec=/usr/local/bin/firefox/firefox
+Icon=/usr/local/bin/firefox/browser/chrome/icons/default/default128.png
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;Favorite;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp; X-Ayatana-Desktop-Shortcuts=NewWindow;NewIncognitos;
+EOL
+rm -f firefox.tar.bz
+
+
 echo "Please run chsh and select ZSH"
