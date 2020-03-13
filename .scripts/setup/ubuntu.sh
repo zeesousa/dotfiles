@@ -46,8 +46,6 @@ sudo apt-get update
 sudo apt-get install -y elasticsearch
 
 # psql
-wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | sudo tee  /etc/apt/sources.list.d/pgdg.list
 sudo apt-get update
 sudo apt-get install -y postgresql-12 libpq-dev
 sudo cp $0/misc/pg_hba.conf /etc/postgresql/12/main/pg_hba.conf
@@ -90,9 +88,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vund
 vim +PlugInstall +qall
 
 # chromium
-sudo add-apt-repository ppa:chromium-team/stable
-sudo apt-get update
-sudo apt-get -y chromium-chromedriver chromium-driver
+sudo apt-get -y chromium chromium-driver
 
 # firefox-dev
 
