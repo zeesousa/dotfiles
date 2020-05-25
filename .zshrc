@@ -39,9 +39,11 @@ if (( $+commands[hub] )); then
   }
 fi
 
+# add my custom scripts to path
 export PATH="$PATH:$HOME/.scripts/git"
 export PATH="$PATH:$HOME/.scripts/bin"
 
+# geometry stuff
 GEOMETRY_PROMPT_PREFIX="%F{$GEOMETRY_COLOR_DIR}$USER"
 
 #paranoid android
@@ -60,11 +62,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     test -d "/etc/profile.d/vte.sh" && . /etc/profile.d/vte.sh
 fi
 
-if grep -q microsoft-standard /proc/version; then
-    {
-        (sudo /home/xico/.scripts/bin/wsl-startup &)
-        test keychain && eval `keychain --eval` || true
-    } &>> /home/xico/.wsl-logs
+if grep -q Microsoft /proc/version; then
+    keychain $HOME/.ssh/id_rsa
+    source $HOME/.keychain/$HOST-sh
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
