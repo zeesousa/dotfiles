@@ -5,10 +5,11 @@ gpg --recv-keys 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
 sudo pacman -Sy pacaur
 
 pacaur -Sy hub moka-icon-theme arc-gtk-theme yadm git zsh curl direnv wget \
-  franz-bin slack-desktop visual-studio-code-bin snapd firefox elasticsearch \
-  mongodb-bin chromedriver base-devel --noconfirm
+  franz-bin slack-desktop visual-studio-code-bin snapd \
+  chromedriver base-devel postgresql neovim --noconfirm
 
 # some snaps
+sudo systemctl start snapd
 sudo snap install discord spotify
 
 # nvim
@@ -18,26 +19,28 @@ vim +PlugInstall +qall
 # psql
 sudo su - postgres -c "initdb --locale en_US.UTF-8 -D '/var/lib/postgres/data'"
 sudo systemctl start postgresql
-sudo cp $0/misc/pg_hba.conf /etc/postgresql/12/main/pg_hba.conf
-sudo systemctl restart postgresql
 ORIGINAL_USER="$(echo $USER)"
-sudo runuser postgres -c "createuser $ORIGINAL_USER -s"
+sudo runuser postgres -c "createuser $ORIGINAL_USER -s" || true
+
+# zsh
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+source ~/.zshrc
 
 # asdf
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.5
-.asdf/bin/asdf update
-.asdf/bin/asdf plugin-add ruby
-.asdf/bin/asdf plugin-add nodejs
+source ~/.zshrc
+asdf update
+asdf plugin-add ruby
+asdf plugin-add nodejs
 export GNUPGHOME="${ASDF_DIR:-$HOME/.asdf}/keyrings/nodejs" && mkdir -p "$GNUPGHOME" && chmod 0700 "$GNUPGHOME"
 bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
-.asdf/bin/asdf install ruby "2.6.5"
-.asdf/bin/asdf install nodejs "12.13.0"
-.asdf/bin/asdf global ruby "2.6.5"
-.asdf/bin/asdf global nodejs "12.13.0"
-.asdf/bin/asdf reshim ruby
-.asdf/bin/asdf reshim nodejs
+asdf install ruby "2.7.1"
+asdf install nodejs "14.11.0"
+asdf global ruby "2.7.1"
+asdf global nodejs "14.11.0"
+asdf reshim ruby
+asdf reshim nodejs
 curl -o- -L https://yarnpkg.com/install.sh | bash
-
 
 # fira fonts
 wget https://github.com/carrois/Fira/archive/master.zip
