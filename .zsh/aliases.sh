@@ -1,7 +1,5 @@
 #!/bin/sh
 
-alias vscode-export-extensions="rm -f $HOME/.vscode/extensions.list && code --list-extensions > $HOME/.vscode/extensions.list"
-alias vscode-import-extensions="$HOME/.scripts/setup/dev/vscode_packages.sh"
 alias cryptofool="curl --silent https://raw.githubusercontent.com/naps62/cryptofool/master/bin/exchange-rate | ruby"
 alias vim="nvim"
 alias update_system="sudo apt-get update && sudo apt-get upgrade"
