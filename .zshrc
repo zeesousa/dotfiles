@@ -67,3 +67,5 @@ if grep -q Microsoft /proc/version; then
     source $HOME/.keychain/$HOST-sh
 fi
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
