@@ -1,8 +1,8 @@
 #!/bin/sh
 
-alias cryptofool="curl --silent https://raw.githubusercontent.com/naps62/cryptofool/master/bin/exchange-rate | ruby"
 alias vim="nvim"
-alias update_system="sudo apt-get update && sudo apt-get upgrade"
+alias update_ubuntu_system="sudo apt-get update && sudo apt-get upgrade"
+alias update_arch_system="sudo yay -Syyu"
 alias yarn_reset="rm -rf node_modules && yarn"
 alias bi="bundler install"
 alias be="bundler exec"
