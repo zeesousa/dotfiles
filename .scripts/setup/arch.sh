@@ -40,7 +40,7 @@ asdf global ruby "2.7.1"
 asdf global nodejs "14.11.0"
 asdf reshim ruby
 asdf reshim nodejs
-curl -o- -L https://yarnpkg.com/install.sh | bash
+sudo pacman -Sy yarn
 
 # fira fonts
 wget https://github.com/carrois/Fira/archive/master.zip

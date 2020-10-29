@@ -52,7 +52,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 #node
-export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # PIP
 export PATH=~/.local/bin:$PATH
@@ -67,5 +67,3 @@ if grep -q Microsoft /proc/version; then
     source $HOME/.keychain/$HOST-sh
 fi
 
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
