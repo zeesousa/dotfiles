@@ -12,15 +12,15 @@ fi
 # hookup direnv for .envrc
 eval "$(direnv hook zsh)"
 
-# ASDF
-source $HOME/.asdf/asdf.sh
-
 # Linux Brew
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
   export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
   export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 fi
+
+# ASDF
+source $HOME/.asdf/asdf.sh
 
 # Disabled once I can check a faster alternative
 # ~/.scripts/check_updates_dotfiles.sh
